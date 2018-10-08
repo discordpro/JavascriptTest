@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function openWin() {
+    var myWindow = window.open("", "", "width=400, height=200");
+    myWindow.opener.document.getElementById("demo").innerHTML = 
+    "Whos been drawing windows.";
+}
+</script>
+</head>
+<body>
+
+<button onclick="openWin()">Open Window</button>
